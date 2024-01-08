@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Isteyak/Desktop/Bank_App_Docker",
-      "program": "c:/Users/Isteyak/Desktop/Bank_App_Docker/build/Debug/outDebug",
+      "cwd": "c:/Users/Isteyak/Desktop/Done Projects/Bank_App_Docker",
+      "program": "c:/Users/Isteyak/Desktop/Done Projects/Bank_App_Docker/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
