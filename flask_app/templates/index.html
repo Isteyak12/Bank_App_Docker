@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+</head>
+<body>
+    <h1>Accounts</h1>
+    <ul>
+        {% for account_id, account_info in accounts.items() %}
+            <li><a href="{{ url_for('account', account_id=account_id) }}">{{ account_info.name }} - Balance: {{ account_info.balance }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h2>Transfer Money</h2>
+    <form action="{{ url_for('transfer') }}" method="post">
+        <label for="sender">Sender Account ID:</label>
+        <input type="text" name="sender" required><br>
+
+        <label for="recipient">Recipient Account ID:</label>
+        <input type="text" name="recipient" required><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required><br>
+
+        <button type="submit">Transfer</button>
+    </form>
+</body>
+</html>
